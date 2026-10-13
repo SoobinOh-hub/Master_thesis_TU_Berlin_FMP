@@ -1,0 +1,55 @@
+%------------------------------
+% THESIS COVER
+%------------------------------			
+\begin{titlepage}
+    \begin{center}
+        %------------------------------
+        % LOGOS
+        %------------------------------
+        \begin{minipage}{0.4\textwidth}
+            \raggedright
+            \vfill	
+            \includegraphics[trim={2cm 2cm 2cm 2cm}, clip, height=3cm]{Logo_tub}
+            \vfill
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.4\textwidth}
+            \raggedleft
+            \vfill
+            \includegraphics[height=3cm]{LaTeX_template_thesis/Figures/FMP.png}
+            \vfill
+        \end{minipage}
+        %------------------------------
+        % TITLE AND AUTHOR INFORMATION
+        %------------------------------
+        \vfill
+        \huge\textbf{\mytitle}\\[1ex]
+        \Large\iflanguage{english}{\myengsubtitle}{}\\[1ex]
+        \vfill
+        \normalsize
+        \iflanguage{english}{submitted by}{}\\
+        \autor
+        \vfill
+        \iflanguage{english}{Matriculation number}{}\\
+        \mymatriculationnumber
+        %------------------------------
+        % DEPARTMENT AND UNIVERSITY
+        %------------------------------
+        \vfill	
+        \normalsize
+        \iflanguage{english}{Under the scientific supervision of}{}\\
+        \textbf{\mysupervisor}
+        \vfill
+        \iflanguage{english}{Under the scientific guidance of}{}\\
+        \textbf{\myadvisor}
+        \vfill
+        \myplace, \monthyeardate
+        \vfill
+        \myuniversity\\
+        \myfaculty\\
+        \myinstitute\\
+        \mydepartment\\[2ex]
+        
+        \ifthenelse{\boolean{containsEN}}{\textbf{Achtung, diese Arbeit enthält einen Sperrvermerk aufgrund einer Geheimhaltungsvereinbarung mit der Firma \firmenname}}{}
+    \end{center}				
+\end{titlepage}
